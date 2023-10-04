@@ -7,6 +7,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @Slf4j
 public class PlaygroundService {
@@ -27,6 +29,14 @@ public class PlaygroundService {
         schedulerService.schedule(HelloWorldJob.class, info);
     }
 
+    public List<TimerInfo> getAllRunningTimers() {
+        log.info("getAllRunningTimers");
+        return schedulerService.getAllRunningTimers();
+    }
 
+    public TimerInfo getRunningTimer(String timerId) {
+        log.info("getRunningTimer: {}", timerId);
+        return schedulerService.getRunningTimer(timerId);
+    }
 }
 

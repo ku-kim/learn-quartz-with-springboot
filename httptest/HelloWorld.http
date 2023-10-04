@@ -1,4 +1,8 @@
-### Send POST request with json body
+### helloworld 스케줄링 실행
 POST localhost:8080/api/timer/runhelloworld
-Content-Type: application/json
 
+### 전체 스케줄링 조회
+GET localhost:8080/api/timer
+
+### job name으로 스케줄링 조회
+GET localhost:8080/api/timer/HelloWorldJob
