@@ -1,0 +1,4 @@
+### Send POST request with json body
+POST localhost:8080/api/timer/runhelloworld
+Content-Type: application/json
+

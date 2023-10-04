@@ -11,6 +11,6 @@ public class TimerInfo {
     private boolean runForever;
     private long repeatIntervalMs;
     private long initialOffsetMs;
-    private String callbackDate;
+    private String callbackData;
 
 }
