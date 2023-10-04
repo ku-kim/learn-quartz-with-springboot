@@ -8,6 +8,7 @@ import lombok.Setter;
 public class TimerInfo {
 
     private int totalFireCount;
+    private int remainingFireCount;
     private boolean runForever;
     private long repeatIntervalMs;
     private long initialOffsetMs;

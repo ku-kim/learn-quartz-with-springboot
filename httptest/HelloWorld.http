@@ -6,3 +6,6 @@ GET localhost:8080/api/timer
 
 ### job name으로 스케줄링 조회
 GET localhost:8080/api/timer/HelloWorldJob
+
+### job name으로 스케줄링 삭제
+DELETE localhost:8080/api/timer/HelloWorldJob

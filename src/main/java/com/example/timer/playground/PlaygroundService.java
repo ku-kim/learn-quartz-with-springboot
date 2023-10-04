@@ -22,6 +22,7 @@ public class PlaygroundService {
     public void runHelloWorldJob() {
         TimerInfo info = new TimerInfo();
         info.setTotalFireCount(5);
+        info.setRemainingFireCount(info.getTotalFireCount());
         info.setRepeatIntervalMs(2000);
         info.setInitialOffsetMs(1000);
         info.setCallbackData("callback data");
@@ -37,6 +38,10 @@ public class PlaygroundService {
     public TimerInfo getRunningTimer(String timerId) {
         log.info("getRunningTimer: {}", timerId);
         return schedulerService.getRunningTimer(timerId);
+    }
+
+    public Boolean deleteTimer(String timerId) {
+        return schedulerService.deleteTimer(timerId);
     }
 }
 

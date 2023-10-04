@@ -75,10 +75,33 @@ public class SchedulerService {
         }
     }
 
+    public void updateTimer(String timerId, TimerInfo info) {
+        try {
+            JobDetail jobDetail = scheduler.getJobDetail(new JobKey(timerId));
+
+            if (Objects.isNull(jobDetail)) {
+                return;
+            }
+
+            jobDetail.getJobDataMap().put(timerId, info);
+        } catch (SchedulerException e) {
+            log.error(e.getMessage(), e);
+        }
+    }
+
+    public Boolean deleteTimer(String timerId) {
+        try {
+            return scheduler.deleteJob(new JobKey(timerId));
+        } catch (SchedulerException e) {
+            log.error(e.getMessage(), e);
+            return false;
+        }
+    }
     @PostConstruct
     public void init() {
         try {
             scheduler.start();
+            scheduler.getListenerManager().addTriggerListener(new SimpleTriggerListner(this));
         } catch (SchedulerException e) {
             log.error(e.getMessage(), e);
             throw new RuntimeException(e);
