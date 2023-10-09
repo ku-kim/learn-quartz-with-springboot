@@ -1,6 +1,6 @@
-package com.example.timer.util;
+package com.example.timer.tutorial.util;
 
-import com.example.timer.info.TimerInfo;
+import com.example.timer.tutorial.info.TimerInfo;
 import org.quartz.JobBuilder;
 import org.quartz.JobDataMap;
 import org.quartz.JobDetail;

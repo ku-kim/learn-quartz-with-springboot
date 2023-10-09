@@ -1,6 +1,6 @@
-package com.example.timer.playground;
+package com.example.timer.tutorial.playground;
 
-import com.example.timer.info.TimerInfo;
+import com.example.timer.tutorial.info.TimerInfo;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

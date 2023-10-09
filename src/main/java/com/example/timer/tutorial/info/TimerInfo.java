@@ -1,4 +1,4 @@
-package com.example.timer.info;
+package com.example.timer.tutorial.info;
 
 import lombok.Getter;
 import lombok.Setter;

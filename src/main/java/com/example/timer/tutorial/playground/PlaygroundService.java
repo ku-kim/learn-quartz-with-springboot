@@ -1,8 +1,8 @@
-package com.example.timer.playground;
+package com.example.timer.tutorial.playground;
 
-import com.example.timer.info.TimerInfo;
-import com.example.timer.jobs.HelloWorldJob;
-import com.example.timer.service.SchedulerService;
+import com.example.timer.tutorial.info.TimerInfo;
+import com.example.timer.tutorial.jobs.HelloWorldJob;
+import com.example.timer.tutorial.service.SchedulerService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

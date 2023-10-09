@@ -1,6 +1,6 @@
-package com.example.timer.jobs;
+package com.example.timer.tutorial.jobs;
 
-import com.example.timer.info.TimerInfo;
+import com.example.timer.tutorial.info.TimerInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.quartz.Job;
 import org.quartz.JobDataMap;

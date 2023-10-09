@@ -1,7 +1,6 @@
-package com.example.timer.service;
+package com.example.timer.tutorial.service;
 
-import com.example.timer.info.TimerInfo;
-import com.example.timer.jobs.HelloWorldJob;
+import com.example.timer.tutorial.info.TimerInfo;
 import org.quartz.JobDataMap;
 import org.quartz.JobExecutionContext;
 import org.quartz.Trigger;

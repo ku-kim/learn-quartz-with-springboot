@@ -1,7 +1,7 @@
-package com.example.timer.service;
+package com.example.timer.tutorial.service;
 
-import com.example.timer.info.TimerInfo;
-import com.example.timer.util.TimerUtils;
+import com.example.timer.tutorial.info.TimerInfo;
+import com.example.timer.tutorial.util.TimerUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.quartz.JobDetail;
 import org.quartz.JobKey;
