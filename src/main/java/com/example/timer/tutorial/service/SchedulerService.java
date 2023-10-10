@@ -97,24 +97,24 @@ public class SchedulerService {
             return false;
         }
     }
-    @PostConstruct
-    public void init() {
-        try {
-            scheduler.start();
-            scheduler.getListenerManager().addTriggerListener(new SimpleTriggerListner(this));
-        } catch (SchedulerException e) {
-            log.error(e.getMessage(), e);
-            throw new RuntimeException(e);
-        }
-    }
-
-    @PreDestroy
-    public void preDestroy() {
-        try {
-            scheduler.shutdown();
-        } catch (SchedulerException e) {
-            log.error(e.getMessage(), e);
-            throw new RuntimeException(e);
-        }
-    }
+    // @PostConstruct
+    // public void init() {
+    //     try {
+    //         scheduler.start();
+    //         scheduler.getListenerManager().addTriggerListener(new SimpleTriggerListner(this));
+    //     } catch (SchedulerException e) {
+    //         log.error(e.getMessage(), e);
+    //         throw new RuntimeException(e);
+    //     }
+    // }
+    //
+    // @PreDestroy
+    // public void preDestroy() {
+    //     try {
+    //         scheduler.shutdown();
+    //     } catch (SchedulerException e) {
+    //         log.error(e.getMessage(), e);
+    //         throw new RuntimeException(e);
+    //     }
+    // }
 }
